@@ -1,5 +1,4 @@
 import { html, PolymerElement } from '@polymer/polymer/polymer-element.js';
-import '@polymer/polymer/lib/elements/custom-style.js';
 import '@whcg/whcg-general-styles/grid.js';
 
 class WhcgSectionTextlongInputChart extends PolymerElement {

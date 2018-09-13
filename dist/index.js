@@ -3,7 +3,6 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var polymerElement_js = require('@polymer/polymer/polymer-element.js');
-require('@polymer/polymer/lib/elements/custom-style.js');
 require('@whcg/whcg-general-styles/grid.js');
 
 class WhcgSectionTextlongInputChart extends polymerElement_js.PolymerElement {
