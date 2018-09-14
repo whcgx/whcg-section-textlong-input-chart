@@ -14,25 +14,18 @@ class WhcgSectionTextlongInputChart extends polymerElement_js.PolymerElement {
             padding-top: 130px;
         }
 
-        .categoryinputsection-headline {
+        .headline {
             padding-top: 32px;
             font-family: var(--parmaco-font-family);
             font-size: var(--parmaco-font-size-xl);
-            color: var(--parmaco-base-color-100pct);
-            
+            color: var(--parmaco-base-color-100pct);   
         }
-        .categoryinputsection-content {
-        }
-
-        .categoryinputsection-content--withchartbottom {
+       
+        .content {
             grid-template-rows: auto 350px;
         }
 
-        .categoryinputsection-content--withcharttop {
-            grid-template-rows: 350px auto;
-        }
-
-        .categoryinputsection-content-text{
+        .content-text{
             padding-top: 33px;
             font-family: var(--parmaco-font-family);
             font-size: var(--parmaco-font-size-s);
@@ -40,51 +33,28 @@ class WhcgSectionTextlongInputChart extends polymerElement_js.PolymerElement {
             color: var(--parmaco-base-color-100pct);
         }
 
-        .categoryinputsection-content-text--top{
-            padding-top: 33px;
-            font-family: var(--parmaco-font-family);
-            font-size: var(--parmaco-font-size-s);
-            font-weight: var(--parmaco-font-weight-normal);
-            color: var(--parmaco-base-color-100pct);
+        .content-inputbox {
         }
 
-        .categoryinputsection-content-inputbox {
-        }
-
-        .categoryinputsection-content-inputboxrow--bottom {
+        .content-chart {
             padding-top: 33px;
         }
-
-        .categoryinputsection-content-chart {
-            padding-top: 33px;
-        }
-
-        .categoryinputsection-content-chart--bottom {
-            padding-top: 33px;
-        }
-
-        .categoryinputsection-content-chart--top {
-            padding-top: 33px;
-        }
-
-        .gridcontent-right {
-            justify-self: end;
-        }
-
-
 
     </style>
 
     <div class="grid-12 categoryinputsection">
-        <div class="col2span2 categoryinputsection-headline"><slot name="title"></slot></div>
-        <div class="col4span8 grid-8 categoryinputsection-content--withchartbottom">
-            <div class="col1span8 categoryinputsection-content-text">
+        <div class="col2span2 headline">
+            <slot name="title"></slot>
+        </div>
+
+        <div class="col4span8 grid-8 content">
+            <div class="col1span8 content-text">
                 <slot name="text"></slot>
             </div>
-            <div class="col1span3 categoryinputsection-content-inputbox">
+            <div class="col1span3 content-inputbox">
                 <slot name="input"></slot>
             </div>
-            <div class="col4span5 categoryinputsection-content-chart--bottom">
+            <div class="col4span5 content-chart">
                 <slot name="chart"></slot>
             </div>
         </div>
