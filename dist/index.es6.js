@@ -5,8 +5,8 @@ class WhcgSectionTextlongInputChart extends PolymerElement {
   static get template() {
     return html`
     <style include = "style-element-grid">
-      
-        .categoryinputsection {
+
+        .section {
             padding-top: 130px;
         }
 
@@ -38,7 +38,7 @@ class WhcgSectionTextlongInputChart extends PolymerElement {
 
     </style>
 
-    <div class="grid-12 categoryinputsection">
+    <div class="grid-12 section">
         <div class="col2span2 headline">
             <slot name="title"></slot>
         </div>
